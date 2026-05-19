@@ -227,16 +227,6 @@
 
   </div>
 
-  <!-- Prototype note -->
-  <div class="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-900">
-    <strong class="text-amber-950">Prototype notes:</strong>
-    <ul class="list-disc pl-5 mt-2 space-y-1">
-      <li>Tailwind 4 loaded via the official Play CDN (<code class="text-xs bg-white px-1.5 py-0.5 rounded border border-amber-200">@tailwindcss/browser@4</code> from jsDelivr) — the real codebase migration would use <code class="text-xs bg-white px-1.5 py-0.5 rounded border border-amber-200">tailwindcss-rails</code> v4.x for production builds.</li>
-      <li>Brand colors defined inline via the <code class="text-xs bg-white px-1.5 py-0.5 rounded border border-amber-200">@theme</code> directive — this is the Tailwind 4 replacement for the v3 <code class="text-xs bg-white px-1.5 py-0.5 rounded border border-amber-200">tailwind.config.js</code> color extension.</li>
-      <li>Close date filter is a server-side bucket: the controller translates <code class="text-xs bg-white px-1.5 py-0.5 rounded border border-amber-200">params[:close_date]="60"</code> into <code class="text-xs bg-white px-1.5 py-0.5 rounded border border-amber-200">close_date_between: Date.current..60.days.from_now</code>.</li>
-    </ul>
-  </div>
-
 </div>
 
 <script>
